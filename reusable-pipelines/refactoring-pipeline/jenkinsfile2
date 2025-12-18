@@ -4,6 +4,11 @@ pipeline {
         VERSION = '2.1.0'
         RELEASE_VERSION = 'R.2'
     }
+
+    tools {
+        maven 'maven-3.6.3'
+    }
+
     stages {
         stage('Audit tools') {
             steps {
